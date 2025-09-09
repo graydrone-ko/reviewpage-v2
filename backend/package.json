@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "cd ../frontend && NPM_CONFIG_CACHE=/tmp/npm-cache npm ci --legacy-peer-deps && npm run build && cp -r build/* ../backend/public/",
+    "build": "npm run build:backend",
     "build:backend": "prisma generate && tsc",
     "start": "prisma migrate deploy && node dist/index.js",
     "db:generate": "prisma generate",

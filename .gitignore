@@ -77,6 +77,8 @@ jspm_packages/
 # Gatsby files
 .cache/
 public
+# But allow backend/public for Railway deployment
+!backend/public
 
 # Vuepress build output
 .vuepress/dist
